@@ -1,0 +1,309 @@
+Function: Environment - Generalised time series
+========================================================
+
+by Andrew Constable
+Australian Antarctic Division
+Antarctic Climate and Ecosystems CRC
+
+derived from Constable 2008.
+
+Description avaialable in 
+
+# "C:\\_proj\\EPOC\\_Elements\\Habitats\\Env General EPOC\\Functions - Environment.doc"
+
+Directory for development
+
+```{r echo=TRUE}
+setwd("C:\\_proj\\EPOC\\_Elements\\Habitats\\Env General EPOC\\test")
+```
+
+
+Single Time Series
+------------------
+
+
+X_t=a_t[sin((T_t-t0+F_t+t')/Py_t+1)]+Xmin_t
+
+where
+
+a_t = ma(t-t0)+ca
+Py_t= mp(t-t0)+cp
+F_t = mf(t-t0)+cf
+Xmin_t = mX(t-t0)+cX
+t' = solve[t'|(X_(t-1),a_t,Py_t,Xmin_t,T=(t-1))]
+
+
+
+```{r echo=TRUE}
+
+TestRegionalSeries<- function(yearStart,yearEnd,EnvGenVar_Params)
+{  # start function
+
+
+####################################
+# 1. Input Data
+
+
+#  1.1 Universe properties
+
+  	year1 <- scenario@yearStart - getAttribute(element, "Initialise")$Records
+		yearsN <- scenario@yearEnd - year1 + 1
+
+
+#  1.2 Regional Series
+
+
+#  1.3 Regional Series Variability
+
+      # have a slot for the seed
+       set.seed(Rseed_region)
+       RanSeed_region<-.Random.seed
+
+#  1.4 Polygons within region
+       set.seed(Rseed_polygons)
+       RanSeed_polygons<-.Random.seed
+
+#  1.5 Seasonal cycle within polygons
+
+
+###############################
+# 2. Initialisation of data series
+
+#  2.1 Universe
+
+
+#  2.2 Regional Series
+
+  	yearsFromYear0 <- (year1 - EnvGenVar_Params$Year0)
+		Series <- rep(1,yearsN)
+		tprime_firstYear <- yearsFromYear0 + 2
+		tprime <- 0.00
+
+
+#  2.3 Regional Series variability
+
+
+
+  			if (!is.na(getAttribute(element, "Region_Variation")$Seed)){
+					set.seed(getAttribute(element, "Region_Variation")$Seed * tr)	
+				} else {
+					set.seed(.Random.seed * tr)
+				}
+				LogSD <- sqrt(log(1 + getAttribute(element, "Region_Variation")$CV^2))
+				Rvector <- exp(rnorm((yearsN),mean=0,sd=LogSD))
+				epocDebugMessage(element, "Random Regional Variation:")
+				epocDebugMessage(element, Rvector)
+			} else {
+				Rvector <- exp(rep(0,yearsN))
+			}
+
+
+#  2.4 Polygons within region
+
+
+#  2.5 Seasonal cycle within polygons
+
+  
+######################################################################
+#  3. Loop - Year
+
+		for (i in (yearsFromYear0 + 1):(yearsFromYear0 + yearsN)){
+
+      
+   # --------------------------------------------------------------
+   # 3.1 Regional Series
+      
+			# scale parameters
+			p <- EnvGenVar_Params$p$slope*i+EnvGenVar_Params$p$int
+			a <- EnvGenVar_Params$a$slope*i+EnvGenVar_Params$a$int
+			f <- EnvGenVar_Params$f$slope*i+EnvGenVar_Params$f$int
+			Xmin <- EnvGenVar_Params$Xmin$slope*i+EnvGenVar_Params$Xmin$int
+
+			if((EnvGenVar_Params$f$slope>0.00 | EnvGenVar_Params$p$slope>0.00)
+						& i>=tprime_firstYear){ # solve for tprime
+				# first determine if the (t-1) position was on the rise or fall of the cycle
+				# then search for tprime on the respective rise or fall of the new cycle
+				# bracketed by the maximum and minumum
+				OldPhase<-(((i-1)+tprime+f_old)/p_old)
+				OldPiFraction<-OldPhase-2*floor(OldPhase/2)
+				NewPhase<-(((i-1)+f)/p)
+				NewPiFraction<-NewPhase-2*floor(NewPhase/2)
+
+				if (OldPiFraction>=0.5 & OldPiFraction<=1.5){ # on fall of cycle
+					Fall<-TRUE
+					tprime_min<-(0.5-NewPiFraction)
+					tprime_max<-(1.5-NewPiFraction)
+				} else { # on rise of cycle
+					Fall<-FALSE
+					if (NewPiFraction<0.5) {
+						tprime_min<-(-0.5-NewPiFraction)
+						tprime_max<-(0.5-NewPiFraction)
+					} else {
+						tprime_min<-(1.5-NewPiFraction)
+						tprime_max<-(2.5-NewPiFraction)
+					}
+				}
+
+				if(Series[(i-yearsFromYear0-1)]>(2*a+Xmin) | Series[(i-yearsFromYear0-1)]<Xmin) { #Xt-1 is outside range of new function then snap to max or min
+					if(Series[(i-yearsFromYear0-1)]>(2*a+Xmin)) {
+						tprime<-ifelse (Fall,tprime_min,tprime_max)
+					} else {
+						tprime<-ifelse (Fall,tprime_max,tprime_min)
+					}   
+				} else { # search for Xt-1 in new function
+					tprime<-optimise(function(tprime,a,PiFraction,Xmin,X_t_minus_1)
+								abs((a*(sin((PiFraction+tprime)*pi)+1)+Xmin)-X_t_minus_1)
+							 ,interval = c(tprime_min,tprime_max)
+							 ,a=a
+							 ,PiFraction=NewPiFraction
+							 ,Xmin=Xmin
+							 ,X_t_minus_1=Series[(i-yearsFromYear0-1)])
+				}
+				tprime<-tprime[[1]]*p # convert pi fraction into years
+
+			} 
+
+			Series[i-yearsFromYear0] <- ifelse((p>0),(a*(sin((i+tprime+f)*pi/p)+1)+Xmin),Xmin)
+		  
+			a_old<-a
+			p_old<-p
+			f_old<-f
+			Xmin_old<-Xmin
+   # --------------------------------------------------------------
+   # 3.2 Regional series variability
+   
+   
+   # --------------------------------------------------------------
+   # 3.3 Polygons (variability through correlation matrix)
+
+   
+   # --------------------------------------------------------------
+   # 3.4 Seasonal cycle
+
+      
+      
+      
+      
+      
+   # --------------------------------------------------------------
+		} # end year loop
+		
+		return(Series)
+	} # end function
+
+```
+
+
+
+
+
+Environmental attributes - sourced from data file 
+
+```{r echo=FALSE}
+source("..\\E.O.Env.EnvGenVar.data.01.R")
+
+```
+
+
+
+
+
+
+
+
+
+
+
+eEOV_1
+
+```{r echo=FALSE}
+Year1<-1980
+YearLast<-2015
+EnvParams<-list(Year0 = 1910
+               ,a = list(slope = 0.0, int =  4.0)
+               ,p = list(slope = 0.0, int = 10.0)
+               ,f = list(slope = 0.0, int =  1.0)
+               ,Xmin = list(slope = -0.01, int = 10))  #slope for eEOV_1 = -0.01
+
+Env_tseries<-TestRegionalSeries(Year1,YearLast,EnvParams)
+
+# plot
+Year<-c(Year1:YearLast)
+plot(Year,Env_tseries,type="l",col="black",ylim=c(0,(ceiling(max(Env_tseries))+1)),xlab="Year",ylab="eEOV_1")
+```
+
+eEOV_2
+
+```{r echo=FALSE}
+Year1<-1980
+YearLast<-2015
+EnvParams<-list(Year0 = 1910
+               ,a = list(slope = 0.0, int =  4.0)
+               ,p = list(slope = 0.0, int = 10.0)
+               ,f = list(slope = 0.0, int =  1.0)
+               ,Xmin = list(slope = 0.0, int = 10)) # no change in Xmin
+
+eEOV_2<-TestRegionalSeries(Year1,YearLast,EnvParams)
+
+# plot
+Year<-c(Year1:YearLast)
+plot(Year,eEOV_2,type="l",col="black",ylim=c(0,(ceiling(max(Env_tseries))+1)),xlab="Year",ylab="eEOV_2")
+```
+
+difference of eEOV_1 minus eEOV_2
+
+
+```{r echo=FALSE}
+Year1<-1980
+YearLast<-2015
+
+# plot
+Year<-c(Year1:YearLast)
+plot(Year,(Env_tseries-eEOV_2),type="l",col="black",xlab="Year",ylab="EP2 Productivity")
+```
+
+
+Generate file of the environmental variable for a time series by trial, polygon, time
+-------------------------------------------------------------------------------------
+
+Scenario configuration
+
+```{r echo=FALSE}
+
+Polygons.N<-3
+
+Config<-list(
+             Trials = list(TrialsN = 3
+                         ,YearStart = 1991 # first year of simulation - Year 0 is year before
+                         ,YearEnd   = 2000 # last year of simulation
+                         ,RootDir   = "C:\\_work\\Modelling\\Platforms\\EPOC\\Universe\\code\\Generalised variable - old\\"
+            ,Polygon = list (Polygon.Names = c(
+                                   paste("P0",as.character(c(1:9)),sep="")
+                                  ,paste("P",as.character(c(10)),sep="")))
+            )
+            )
+
+```
+
+Environmental attributes - sourced from data file 
+
+```{r echo=FALSE}
+source("E.O.Env.Gen.data.01.R")
+
+```
+
+Load functions to generate replicate time series and test file input and output including summarising results
+
+```{r echo=FALSE}
+source("C:\\_work\\Modelling\\Functions\\Utilities\\U.ST.DayFromDate.01.R")
+source("E.O.Env.Gen.TimeSeries.fn.01.R")
+
+#mvrnorm was not available in MASS library in R version 3.1.2. - using library mvtnorm with the function rmvnorm in its place
+
+library(mvtnorm)
+
+E.O.Env.Gen.TimeSeries.fn.01(Config,EnvAttributes)
+
+```
+
+
