@@ -1,0 +1,347 @@
+Fri Jun 12 07:33:34 2015 : Opening log file connection:  C:/_proj/EPOC/__testFOOSA-krill_only/EPOCDemo.log
+Loading universe...
+Loaded Scenarios - scenariosN = 1
+General - EnvGenVar - EnvGenVar01 - create environment
+General - EnvGenVar - EnvGenVar01 - set TimeSteps
+General - EnvGenVar - EnvGenVar01 - set Ancillary functions
+General - EnvGenVar - EnvGenVar01 - declare State
+Searching for General Environmental Variable file at: C:/_proj/EPOC/__testFOOSA-krill_only/runtime/EnvGenVar01_input01.dat
+General Environmental Variable - creating new file
+General Environmental Variable - checking file
+	General Environment   : KPFM.Scenario01
+	Polygons              : 1
+	Trials                : 5
+	First Year            : 1950
+	Last Year             : 1960
+	Times In Year         : 1
+	General Environmental Variable - file ready to read
+General - EnvGenVar - EnvGenVar01 - end setup
+Loaded Environment - ElementsN = 1
+KPFM - Krill - Es-KPFM - create environment
+KPFM - Krill - Es-KPFM - set TimeSteps
+KPFM - Krill - Es-KPFM - set Ancillary functions
+KPFM - Krill - Es-KPFM - declare State
+KPFM - Krill - Es-KPFM - end setup 
+Loaded Biota - ElementsN = 1
+Loaded Activity - ElementsN = 0
+Loaded Management - ElementsN = 0
+Loaded Output - ElementsN = 0
+Loaded Presentation - ElementsN = 0
+Finished loading universe
+Starting EPOC Controller...
+        ID: 11001
+ Full Name: EPOC - Ecosystem Productivity Ocean and Climate - Coupled Ocean Ecology Model System
+Short Name: EPOC
+  Revision: 0.5.1
+   Authors: A.Constable, T.Robertson
+ Last Edit: 25 May 2012
+Calendar setup...
+  accumulate time steps from all elements
+     Universe - Module 1: Environment
+                   elementsN = 1
+     Universe - Module 2: Biota
+                   elementsN = 1
+     Universe - Module 3: Activity
+                   elementsN = 0
+     Universe - Module 4: Management
+                   elementsN = 0
+     Universe - Module 5: Output
+                   elementsN = 0
+     Universe - Module 6: Presentation
+                   elementsN = 0
+  establish time series of periods
+  create periods
+  set up timestep data...
+  convert timesteps to periods...
+     Module 1: Environment
+      elementsN = 1
+      setting up element KrillEnv
+     Module 2: Biota
+      elementsN = 1
+      setting up element Krill
+  generate action matrix for each period...
+     Module 1: Environment
+      elementsN = 1
+          Element 1: KrillEnv
+     Module 2: Biota
+      elementsN = 1
+          Element 1: Krill
+     Module 3: Activity
+      elementsN = 0
+     Module 4: Management
+      elementsN = 0
+     Module 5: Output
+      elementsN = 0
+     Module 6: Presentation
+      elementsN = 0
+Configured Calendar
+Universe setup...
+  accumulate reference IDs for elements
+   Setting up Module 1: Environment (1 element)
+      Setting up element KrillEnv
+   Setting up Module 2: Biota (1 element)
+      Setting up element Krill
+   Setting up Module 3: Activity (0 elements)
+   Setting up Module 4: Management (0 elements)
+   Setting up Module 5: Output (0 elements)
+   Setting up Module 6: Presentation (0 elements)
+Configured relative universe according to calendar
+Outputing Calendar...
+Starting simulation...
+Initialising Scenario 1...
+General Environmental Variable - setting file for general variable data
+
+Commencing Scenario 1...
+General Environmental Variable - initialise replicate trial
+
+Replicate 1...
+
+Year 1950 : Period 1
+Year 1950 : Period 2
+Year 1950 : Period 3
+Year 1950 : Period 4
+Year 1951 : Period 1
+Year 1951 : Period 2
+Year 1951 : Period 3
+Year 1951 : Period 4
+Year 1952 : Period 1
+Year 1952 : Period 2
+Year 1952 : Period 3
+Year 1952 : Period 4
+Year 1953 : Period 1
+Year 1953 : Period 2
+Year 1953 : Period 3
+Year 1953 : Period 4
+Year 1954 : Period 1
+Year 1954 : Period 2
+Year 1954 : Period 3
+Year 1954 : Period 4
+Year 1955 : Period 1
+Year 1955 : Period 2
+Year 1955 : Period 3
+Year 1955 : Period 4
+Year 1956 : Period 1
+Year 1956 : Period 2
+Year 1956 : Period 3
+Year 1956 : Period 4
+Year 1957 : Period 1
+Year 1957 : Period 2
+Year 1957 : Period 3
+Year 1957 : Period 4
+Year 1958 : Period 1
+Year 1958 : Period 2
+Year 1958 : Period 3
+Year 1958 : Period 4
+Year 1959 : Period 1
+Year 1959 : Period 2
+Year 1959 : Period 3
+Year 1959 : Period 4
+Year 1960 : Period 1
+Year 1960 : Period 2
+Year 1960 : Period 3
+Year 1960 : Period 4
+
+General Environmental Variable - initialise replicate trial
+
+Replicate 2...
+
+Year 1950 : Period 1
+Year 1950 : Period 2
+Year 1950 : Period 3
+Year 1950 : Period 4
+Year 1951 : Period 1
+Year 1951 : Period 2
+Year 1951 : Period 3
+Year 1951 : Period 4
+Year 1952 : Period 1
+Year 1952 : Period 2
+Year 1952 : Period 3
+Year 1952 : Period 4
+Year 1953 : Period 1
+Year 1953 : Period 2
+Year 1953 : Period 3
+Year 1953 : Period 4
+Year 1954 : Period 1
+Year 1954 : Period 2
+Year 1954 : Period 3
+Year 1954 : Period 4
+Year 1955 : Period 1
+Year 1955 : Period 2
+Year 1955 : Period 3
+Year 1955 : Period 4
+Year 1956 : Period 1
+Year 1956 : Period 2
+Year 1956 : Period 3
+Year 1956 : Period 4
+Year 1957 : Period 1
+Year 1957 : Period 2
+Year 1957 : Period 3
+Year 1957 : Period 4
+Year 1958 : Period 1
+Year 1958 : Period 2
+Year 1958 : Period 3
+Year 1958 : Period 4
+Year 1959 : Period 1
+Year 1959 : Period 2
+Year 1959 : Period 3
+Year 1959 : Period 4
+Year 1960 : Period 1
+Year 1960 : Period 2
+Year 1960 : Period 3
+Year 1960 : Period 4
+
+General Environmental Variable - initialise replicate trial
+
+Replicate 3...
+
+Year 1950 : Period 1
+Year 1950 : Period 2
+Year 1950 : Period 3
+Year 1950 : Period 4
+Year 1951 : Period 1
+Year 1951 : Period 2
+Year 1951 : Period 3
+Year 1951 : Period 4
+Year 1952 : Period 1
+Year 1952 : Period 2
+Year 1952 : Period 3
+Year 1952 : Period 4
+Year 1953 : Period 1
+Year 1953 : Period 2
+Year 1953 : Period 3
+Year 1953 : Period 4
+Year 1954 : Period 1
+Year 1954 : Period 2
+Year 1954 : Period 3
+Year 1954 : Period 4
+Year 1955 : Period 1
+Year 1955 : Period 2
+Year 1955 : Period 3
+Year 1955 : Period 4
+Year 1956 : Period 1
+Year 1956 : Period 2
+Year 1956 : Period 3
+Year 1956 : Period 4
+Year 1957 : Period 1
+Year 1957 : Period 2
+Year 1957 : Period 3
+Year 1957 : Period 4
+Year 1958 : Period 1
+Year 1958 : Period 2
+Year 1958 : Period 3
+Year 1958 : Period 4
+Year 1959 : Period 1
+Year 1959 : Period 2
+Year 1959 : Period 3
+Year 1959 : Period 4
+Year 1960 : Period 1
+Year 1960 : Period 2
+Year 1960 : Period 3
+Year 1960 : Period 4
+
+General Environmental Variable - initialise replicate trial
+
+Replicate 4...
+
+Year 1950 : Period 1
+Year 1950 : Period 2
+Year 1950 : Period 3
+Year 1950 : Period 4
+Year 1951 : Period 1
+Year 1951 : Period 2
+Year 1951 : Period 3
+Year 1951 : Period 4
+Year 1952 : Period 1
+Year 1952 : Period 2
+Year 1952 : Period 3
+Year 1952 : Period 4
+Year 1953 : Period 1
+Year 1953 : Period 2
+Year 1953 : Period 3
+Year 1953 : Period 4
+Year 1954 : Period 1
+Year 1954 : Period 2
+Year 1954 : Period 3
+Year 1954 : Period 4
+Year 1955 : Period 1
+Year 1955 : Period 2
+Year 1955 : Period 3
+Year 1955 : Period 4
+Year 1956 : Period 1
+Year 1956 : Period 2
+Year 1956 : Period 3
+Year 1956 : Period 4
+Year 1957 : Period 1
+Year 1957 : Period 2
+Year 1957 : Period 3
+Year 1957 : Period 4
+Year 1958 : Period 1
+Year 1958 : Period 2
+Year 1958 : Period 3
+Year 1958 : Period 4
+Year 1959 : Period 1
+Year 1959 : Period 2
+Year 1959 : Period 3
+Year 1959 : Period 4
+Year 1960 : Period 1
+Year 1960 : Period 2
+Year 1960 : Period 3
+Year 1960 : Period 4
+
+General Environmental Variable - initialise replicate trial
+
+Replicate 5...
+
+Year 1950 : Period 1
+Year 1950 : Period 2
+Year 1950 : Period 3
+Year 1950 : Period 4
+Year 1951 : Period 1
+Year 1951 : Period 2
+Year 1951 : Period 3
+Year 1951 : Period 4
+Year 1952 : Period 1
+Year 1952 : Period 2
+Year 1952 : Period 3
+Year 1952 : Period 4
+Year 1953 : Period 1
+Year 1953 : Period 2
+Year 1953 : Period 3
+Year 1953 : Period 4
+Year 1954 : Period 1
+Year 1954 : Period 2
+Year 1954 : Period 3
+Year 1954 : Period 4
+Year 1955 : Period 1
+Year 1955 : Period 2
+Year 1955 : Period 3
+Year 1955 : Period 4
+Year 1956 : Period 1
+Year 1956 : Period 2
+Year 1956 : Period 3
+Year 1956 : Period 4
+Year 1957 : Period 1
+Year 1957 : Period 2
+Year 1957 : Period 3
+Year 1957 : Period 4
+Year 1958 : Period 1
+Year 1958 : Period 2
+Year 1958 : Period 3
+Year 1958 : Period 4
+Year 1959 : Period 1
+Year 1959 : Period 2
+Year 1959 : Period 3
+Year 1959 : Period 4
+Year 1960 : Period 1
+Year 1960 : Period 2
+Year 1960 : Period 3
+Year 1960 : Period 4
+
+Completed Scenario 1
+Ending Simulation!
+
+   User: 1.51 sec
+ System: 0.33 sec
+Elapsed: 1.86000000000001 sec
+
+Closing data files...

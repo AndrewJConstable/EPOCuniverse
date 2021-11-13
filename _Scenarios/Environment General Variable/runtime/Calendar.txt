@@ -1,0 +1,202 @@
+Calendar - KPFM Scenario parameters 0801
+Number of Periods = 3
+
+
+##################################################################
+Period 1
+##################################################################
+
+Period Number                   = 1
+Last julian day of period       = 274
+Knife-edge period (logical)     = FALSE
+Proportion of Year              = 0.7506849
+Start of period (propn of year) = 0
+End of period (propn of year)   = 0.7506849
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     EnvGenVar1               1          2          0.751
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+NA           NA                      NA    NA     NA     NA             
+
+During
+
+NA           NA                      NA    NA     NA     NA             
+
+After
+
+NA           NA                      NA    NA     NA     NA             
+
+##################################################################
+Period 2
+##################################################################
+
+Period Number                   = 2
+Last julian day of period       = 274
+Knife-edge period (logical)     = TRUE
+Proportion of Year              = 0
+Start of period (propn of year) = 0.7506849
+End of period (propn of year)   = 0.7506849
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     EnvGenVar1               2          1              1
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+NA           NA                      NA    NA     NA     NA             
+
+During
+
+NA           NA                      NA    NA     NA     NA             
+
+After
+
+Environment  EnvGenVar1               1     2    274     update.annual.e
+
+##################################################################
+Period 3
+##################################################################
+
+Period Number                   = 3
+Last julian day of period       = 365
+Knife-edge period (logical)     = FALSE
+Proportion of Year              = 0.2493151
+Start of period (propn of year) = 0.7506849
+End of period (propn of year)   = 1
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     EnvGenVar1               1          1          0.249
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+Environment  EnvGenVar1               1     3    365     printState     
+
+During
+
+NA           NA                      NA    NA     NA     NA             
+
+After
+
+NA           NA                      NA    NA     NA     NA             
+

@@ -1,0 +1,1093 @@
+Calendar - KPFM Scenario parameters 0801
+Number of Periods = 14
+
+
+##################################################################
+Period 1
+##################################################################
+
+Period Number                   = 1
+Last julian day of period       = 31
+Knife-edge period (logical)     = FALSE
+Proportion of Year              = 0.08493151
+Start of period (propn of year) = 0
+End of period (propn of year)   = 0.08493151
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     EV01                     1          1              1
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Check - Module in Universe is  = Biota
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     PPfood                   1          1              1
+     Krilll                   1          5           0.17
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+Environment  EV01                     1     1     31     printState     
+Biota        PPfood                   1     1     31     foodUpdate     
+
+During
+
+Biota        PPfood                   1     1     31     sequest        
+Biota        PPfood                   1     1     31     migrate        
+Biota        Krilll                   2     1     31     consume        
+Biota        Krilll                   2     1     31     mortality      
+Biota        Krilll                   2     1     31     migrate        
+
+After
+
+Environment  EV01                     1     1     31     update.environm
+Biota        PPfood                   1     1     31     printState     
+Biota        Krilll                   2     1     31     allocateConsump
+
+##################################################################
+Period 2
+##################################################################
+
+Period Number                   = 2
+Last julian day of period       = 61
+Knife-edge period (logical)     = FALSE
+Proportion of Year              = 0.08219178
+Start of period (propn of year) = 0.08493151
+End of period (propn of year)   = 0.1671233
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     EV01                     2          1              1
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Check - Module in Universe is  = Biota
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     PPfood                   2          1              1
+     Krilll                   1          6          0.165
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+Environment  EV01                     1     2     61     printState     
+Biota        PPfood                   1     2     61     foodUpdate     
+
+During
+
+Biota        PPfood                   1     2     61     sequest        
+Biota        PPfood                   1     2     61     migrate        
+Biota        Krilll                   2     2     61     consume        
+Biota        Krilll                   2     2     61     mortality      
+Biota        Krilll                   2     2     61     migrate        
+
+After
+
+Environment  EV01                     1     2     61     update.environm
+Biota        PPfood                   1     2     61     printState     
+Biota        Krilll                   2     2     61     allocateConsump
+
+##################################################################
+Period 3
+##################################################################
+
+Period Number                   = 3
+Last julian day of period       = 90
+Knife-edge period (logical)     = FALSE
+Proportion of Year              = 0.07945205
+Start of period (propn of year) = 0.1671233
+End of period (propn of year)   = 0.2465753
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     EV01                     3          1          0.935
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Check - Module in Universe is  = Biota
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     PPfood                   3          1          0.935
+     Krilll                   1          7          0.159
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+Environment  EV01                     1     3     90     printState     
+Biota        PPfood                   1     3     90     foodUpdate     
+
+During
+
+Biota        PPfood                   1     3     90     sequest        
+Biota        PPfood                   1     3     90     migrate        
+Biota        Krilll                   2     3     90     consume        
+Biota        Krilll                   2     3     90     mortality      
+Biota        Krilll                   2     3     90     migrate        
+
+After
+
+Biota        Krilll                   2     3     90     allocateConsump
+Biota        Krilll                   2     3     90     spawn          
+Biota        Krilll                   2     3     90     printState     
+
+##################################################################
+Period 4
+##################################################################
+
+Period Number                   = 4
+Last julian day of period       = 92
+Knife-edge period (logical)     = FALSE
+Proportion of Year              = 0.005479452
+Start of period (propn of year) = 0.2465753
+End of period (propn of year)   = 0.2520548
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     EV01                     3          2          0.065
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Check - Module in Universe is  = Biota
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     PPfood                   3          2          0.065
+     Krilll                   2          1          0.011
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+NA           NA                      NA    NA     NA     NA             
+
+During
+
+Biota        PPfood                   1     4     92     sequest        
+Biota        PPfood                   1     4     92     migrate        
+Biota        Krilll                   2     4     92     consume        
+Biota        Krilll                   2     4     92     mortality      
+Biota        Krilll                   2     4     92     migrate        
+
+After
+
+Environment  EV01                     1     4     92     update.environm
+Biota        PPfood                   1     4     92     printState     
+Biota        Krilll                   2     4     92     allocateConsump
+
+##################################################################
+Period 5
+##################################################################
+
+Period Number                   = 5
+Last julian day of period       = 122
+Knife-edge period (logical)     = FALSE
+Proportion of Year              = 0.08219178
+Start of period (propn of year) = 0.2520548
+End of period (propn of year)   = 0.3342466
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     EV01                     4          1              1
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Check - Module in Universe is  = Biota
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     PPfood                   4          1              1
+     Krilll                   2          2          0.164
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+Environment  EV01                     1     5    122     printState     
+Biota        PPfood                   1     5    122     foodUpdate     
+
+During
+
+Biota        PPfood                   1     5    122     sequest        
+Biota        PPfood                   1     5    122     migrate        
+Biota        Krilll                   2     5    122     consume        
+Biota        Krilll                   2     5    122     mortality      
+Biota        Krilll                   2     5    122     migrate        
+
+After
+
+Environment  EV01                     1     5    122     update.environm
+Biota        PPfood                   1     5    122     printState     
+Biota        Krilll                   2     5    122     allocateConsump
+
+##################################################################
+Period 6
+##################################################################
+
+Period Number                   = 6
+Last julian day of period       = 153
+Knife-edge period (logical)     = FALSE
+Proportion of Year              = 0.08493151
+Start of period (propn of year) = 0.3342466
+End of period (propn of year)   = 0.4191781
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     EV01                     5          1              1
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Check - Module in Universe is  = Biota
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     PPfood                   5          1              1
+     Krilll                   2          3          0.169
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+Environment  EV01                     1     6    153     printState     
+Biota        PPfood                   1     6    153     foodUpdate     
+
+During
+
+Biota        PPfood                   1     6    153     sequest        
+Biota        PPfood                   1     6    153     migrate        
+Biota        Krilll                   2     6    153     consume        
+Biota        Krilll                   2     6    153     mortality      
+Biota        Krilll                   2     6    153     migrate        
+
+After
+
+Environment  EV01                     1     6    153     update.environm
+Biota        PPfood                   1     6    153     printState     
+Biota        Krilll                   2     6    153     allocateConsump
+
+##################################################################
+Period 7
+##################################################################
+
+Period Number                   = 7
+Last julian day of period       = 183
+Knife-edge period (logical)     = FALSE
+Proportion of Year              = 0.08219178
+Start of period (propn of year) = 0.4191781
+End of period (propn of year)   = 0.5013699
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     EV01                     6          1              1
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Check - Module in Universe is  = Biota
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     PPfood                   6          1              1
+     Krilll                   2          4          0.164
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+Environment  EV01                     1     7    183     printState     
+Biota        PPfood                   1     7    183     foodUpdate     
+
+During
+
+Biota        PPfood                   1     7    183     sequest        
+Biota        PPfood                   1     7    183     migrate        
+Biota        Krilll                   2     7    183     consume        
+Biota        Krilll                   2     7    183     mortality      
+Biota        Krilll                   2     7    183     migrate        
+
+After
+
+Environment  EV01                     1     7    183     update.environm
+Biota        PPfood                   1     7    183     printState     
+Biota        Krilll                   2     7    183     allocateConsump
+
+##################################################################
+Period 8
+##################################################################
+
+Period Number                   = 8
+Last julian day of period       = 213
+Knife-edge period (logical)     = FALSE
+Proportion of Year              = 0.08219178
+Start of period (propn of year) = 0.5013699
+End of period (propn of year)   = 0.5835616
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     EV01                     7          1              1
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Check - Module in Universe is  = Biota
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     PPfood                   7          1              1
+     Krilll                   2          5          0.164
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+Environment  EV01                     1     8    213     printState     
+Biota        PPfood                   1     8    213     foodUpdate     
+
+During
+
+Biota        PPfood                   1     8    213     sequest        
+Biota        PPfood                   1     8    213     migrate        
+Biota        Krilll                   2     8    213     consume        
+Biota        Krilll                   2     8    213     mortality      
+Biota        Krilll                   2     8    213     migrate        
+
+After
+
+Environment  EV01                     1     8    213     update.environm
+Biota        PPfood                   1     8    213     printState     
+Biota        Krilll                   2     8    213     allocateConsump
+
+##################################################################
+Period 9
+##################################################################
+
+Period Number                   = 9
+Last julian day of period       = 244
+Knife-edge period (logical)     = FALSE
+Proportion of Year              = 0.08493151
+Start of period (propn of year) = 0.5835616
+End of period (propn of year)   = 0.6684932
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     EV01                     8          1              1
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Check - Module in Universe is  = Biota
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     PPfood                   8          1              1
+     Krilll                   2          6          0.169
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+Environment  EV01                     1     9    244     printState     
+Biota        PPfood                   1     9    244     foodUpdate     
+
+During
+
+Biota        PPfood                   1     9    244     sequest        
+Biota        PPfood                   1     9    244     migrate        
+Biota        Krilll                   2     9    244     consume        
+Biota        Krilll                   2     9    244     mortality      
+Biota        Krilll                   2     9    244     migrate        
+
+After
+
+Environment  EV01                     1     9    244     update.environm
+Biota        PPfood                   1     9    244     printState     
+Biota        Krilll                   2     9    244     allocateConsump
+
+##################################################################
+Period 10
+##################################################################
+
+Period Number                   = 10
+Last julian day of period       = 273
+Knife-edge period (logical)     = FALSE
+Proportion of Year              = 0.07945205
+Start of period (propn of year) = 0.6684932
+End of period (propn of year)   = 0.7479452
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     EV01                     9          1          0.967
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Check - Module in Universe is  = Biota
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     PPfood                   9          1          0.967
+     Krilll                   2          7          0.158
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+Environment  EV01                     1    10    273     printState     
+Biota        PPfood                   1    10    273     foodUpdate     
+
+During
+
+Biota        PPfood                   1    10    273     sequest        
+Biota        PPfood                   1    10    273     migrate        
+Biota        Krilll                   2    10    273     consume        
+Biota        Krilll                   2    10    273     mortality      
+Biota        Krilll                   2    10    273     migrate        
+
+After
+
+Biota        Krilll                   2    10    273     allocateConsump
+Biota        Krilll                   2    10    273     printState     
+
+##################################################################
+Period 11
+##################################################################
+
+Period Number                   = 11
+Last julian day of period       = 274
+Knife-edge period (logical)     = FALSE
+Proportion of Year              = 0.002739726
+Start of period (propn of year) = 0.7479452
+End of period (propn of year)   = 0.7506849
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     EV01                     9          2          0.033
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Check - Module in Universe is  = Biota
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     PPfood                   9          2          0.033
+     Krilll                   1          1          0.005
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+Biota        Krilll                   2    11    274     advanceStage   
+
+During
+
+Biota        PPfood                   1    11    274     sequest        
+Biota        PPfood                   1    11    274     migrate        
+Biota        Krilll                   2    11    274     consume        
+Biota        Krilll                   2    11    274     mortality      
+Biota        Krilll                   2    11    274     migrate        
+
+After
+
+Environment  EV01                     1    11    274     update.environm
+Biota        PPfood                   1    11    274     printState     
+Biota        Krilll                   2    11    274     allocateConsump
+
+##################################################################
+Period 12
+##################################################################
+
+Period Number                   = 12
+Last julian day of period       = 305
+Knife-edge period (logical)     = FALSE
+Proportion of Year              = 0.08493151
+Start of period (propn of year) = 0.7506849
+End of period (propn of year)   = 0.8356164
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     EV01                    10          1              1
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Check - Module in Universe is  = Biota
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     PPfood                  10          1              1
+     Krilll                   1          2           0.17
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+Environment  EV01                     1    12    305     printState     
+Biota        PPfood                   1    12    305     foodUpdate     
+
+During
+
+Biota        PPfood                   1    12    305     sequest        
+Biota        PPfood                   1    12    305     migrate        
+Biota        Krilll                   2    12    305     consume        
+Biota        Krilll                   2    12    305     mortality      
+Biota        Krilll                   2    12    305     migrate        
+
+After
+
+Environment  EV01                     1    12    305     update.environm
+Biota        PPfood                   1    12    305     printState     
+Biota        Krilll                   2    12    305     allocateConsump
+
+##################################################################
+Period 13
+##################################################################
+
+Period Number                   = 13
+Last julian day of period       = 335
+Knife-edge period (logical)     = FALSE
+Proportion of Year              = 0.08219178
+Start of period (propn of year) = 0.8356164
+End of period (propn of year)   = 0.9178082
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     EV01                    11          1              1
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Check - Module in Universe is  = Biota
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     PPfood                  11          1              1
+     Krilll                   1          3          0.165
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+Environment  EV01                     1    13    335     printState     
+Biota        PPfood                   1    13    335     foodUpdate     
+
+During
+
+Biota        PPfood                   1    13    335     sequest        
+Biota        PPfood                   1    13    335     migrate        
+Biota        Krilll                   2    13    335     consume        
+Biota        Krilll                   2    13    335     mortality      
+Biota        Krilll                   2    13    335     migrate        
+
+After
+
+Environment  EV01                     1    13    335     update.environm
+Biota        PPfood                   1    13    335     printState     
+Biota        Krilll                   2    13    335     allocateConsump
+
+##################################################################
+Period 14
+##################################################################
+
+Period Number                   = 14
+Last julian day of period       = 365
+Knife-edge period (logical)     = FALSE
+Proportion of Year              = 0.08219178
+Start of period (propn of year) = 0.9178082
+End of period (propn of year)   = 1
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     EV01                    12          1              1
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Check - Module in Universe is  = Biota
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     PPfood                  12          1              1
+     Krilll                   1          4          0.165
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+Environment  EV01                     1    14    365     printState     
+Biota        PPfood                   1    14    365     foodUpdate     
+
+During
+
+Biota        PPfood                   1    14    365     sequest        
+Biota        PPfood                   1    14    365     migrate        
+Biota        Krilll                   2    14    365     consume        
+Biota        Krilll                   2    14    365     mortality      
+Biota        Krilll                   2    14    365     migrate        
+
+After
+
+Environment  EV01                     1    14    365     update.environm
+Biota        PPfood                   1    14    365     printState     
+Biota        Krilll                   2    14    365     allocateConsump
+

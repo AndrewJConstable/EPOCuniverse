@@ -1,0 +1,117 @@
+Fri Jun 19 00:56:38 2015 : Opening log file connection:  C:/_proj/EPOC/__testGET-env-food-krill/EPOCDemo.log
+Loading universe...
+Loaded Scenarios - scenariosN = 1
+General - EnvGenVar - EnvGenVar01 - create environment
+General - EnvGenVar - EnvGenVar01 - set TimeSteps
+General - EnvGenVar - EnvGenVar01 - set Ancillary functions
+General - EnvGenVar - EnvGenVar01 - declare State
+Searching for General Environmental Variable file at: C:/_proj/EPOC/__testGET-env-food-krill/runtime/EnvGenVar01_input01.dat
+General Environmental Variable - creating new file
+General Environmental Variable - checking file
+	General Environment   : KPFM.Scenario01
+	Polygons              : 1
+	Trials                : 1
+	First Year            : 1950
+	Last Year             : 2000
+	Times In Year         : 12
+	General Environmental Variable - file ready to read
+General - EnvGenVar - EnvGenVar01 - end setup
+Loaded Environment - ElementsN = 1
+PPfood - PPgenBMS - PPfood - create environment
+PPfood - PPgenBMS - PPfood - set TimeSteps
+PPfood - PPgenBMS - PPfood - set Ancillary functions
+PPfood - PPgenBMS - PPfood - declare State
+PPfood - PPgenBMS - PPfood - end setup 
+Krill - GET - Krill - create environment
+Krill - GET - Krill - set TimeSteps
+Krill - GET - Krill - set Ancillary functions
+Krill - GET - Krill - declare State
+Krill - GET - Krill - end setup
+Loaded Biota - ElementsN = 2
+Loaded Activity - ElementsN = 0
+Loaded Management - ElementsN = 0
+Loaded Output - ElementsN = 0
+Loaded Presentation - ElementsN = 0
+Finished loading universe
+Starting EPOC Controller...
+        ID: 11001
+ Full Name: EPOC - Ecosystem Productivity Ocean and Climate - Coupled Ocean Ecology Model System
+Short Name: EPOC
+  Revision: 0.5.1
+   Authors: A.Constable, T.Robertson
+ Last Edit: 25 May 2012
+Calendar setup...
+  accumulate time steps from all elements
+     Universe - Module 1: Environment
+                   elementsN = 1
+     Universe - Module 2: Biota
+                   elementsN = 2
+     Universe - Module 3: Activity
+                   elementsN = 0
+     Universe - Module 4: Management
+                   elementsN = 0
+     Universe - Module 5: Output
+                   elementsN = 0
+     Universe - Module 6: Presentation
+                   elementsN = 0
+  establish time series of periods
+  create periods
+  set up timestep data...
+  convert timesteps to periods...
+     Module 1: Environment
+      elementsN = 1
+      setting up element EV01
+     Module 2: Biota
+      elementsN = 2
+      setting up element PPfood
+      setting up element Krilll
+  generate action matrix for each period...
+     Module 1: Environment
+      elementsN = 1
+          Element 1: EV01
+     Module 2: Biota
+      elementsN = 2
+          Element 1: PPfood
+          Element 2: Krilll
+     Module 3: Activity
+      elementsN = 0
+     Module 4: Management
+      elementsN = 0
+     Module 5: Output
+      elementsN = 0
+     Module 6: Presentation
+      elementsN = 0
+Configured Calendar
+Universe setup...
+  accumulate reference IDs for elements
+   Setting up Module 1: Environment (1 element)
+      Setting up element EV01
+   Setting up Module 2: Biota (2 elements)
+      Setting up element PPfood
+      Setting up element Krilll
+   Setting up Module 3: Activity (0 elements)
+   Setting up Module 4: Management (0 elements)
+   Setting up Module 5: Output (0 elements)
+   Setting up Module 6: Presentation (0 elements)
+Configured relative universe according to calendar
+Outputing Calendar...
+Starting simulation...
+Initialising Scenario 1...
+General Environmental Variable - setting file for general variable data
+
+Commencing Scenario 1...
+General Environmental Variable - initialise replicate trial
+
+Replicate 1...
+
+Year 1950 : Period 1
+Year 1950 : Period 2
+Year 1950 : Period 3
+Year 1950 : Period 4
+Year 1950 : Period 5
+Year 1950 : Period 6
+Year 1950 : Period 7
+Year 1950 : Period 8
+Year 1950 : Period 9
+Year 1950 : Period 10
+Year 1950 : Period 11

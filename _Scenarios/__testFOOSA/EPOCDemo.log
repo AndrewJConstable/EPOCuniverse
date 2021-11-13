@@ -1,0 +1,544 @@
+Fri Jun 12 07:34:28 2015 : Opening log file connection:  C:/_proj/EPOC/__testFOOSA/EPOCDemo.log
+Loading universe...
+Loaded Scenarios - scenariosN = 1
+General - EnvGenVar - EnvGenVar01 - create environment
+General - EnvGenVar - EnvGenVar01 - set TimeSteps
+General - EnvGenVar - EnvGenVar01 - set Ancillary functions
+General - EnvGenVar - EnvGenVar01 - declare State
+Searching for General Environmental Variable file at: C:/_proj/EPOC/__testFOOSA/runtime/EnvGenVar01_input01.dat
+General Environmental Variable - creating new file
+General Environmental Variable - checking file
+	General Environment   : KPFM.Scenario01
+	Polygons              : 18
+	Trials                : 5
+	First Year            : 1950
+	Last Year             : 1960
+	Times In Year         : 1
+	General Environmental Variable - file ready to read
+General - EnvGenVar - EnvGenVar01 - end setup
+Loaded Environment - ElementsN = 1
+KPFM - Krill - Es-KPFM - create environment
+KPFM - Krill - Es-KPFM - set TimeSteps
+KPFM - Krill - Es-KPFM - set Ancillary functions
+KPFM - Krill - Es-KPFM - declare State
+KPFM - Krill - Es-KPFM - end setup 
+KPFM - Predator - Penguin RecAge 3 - create environment
+KPFM - Predator - Penguin RecAge 3 - set TimeSteps
+KPFM - Predator - Penguin RecAge 3 - set Ancillary functions
+KPFM - Predator - Penguin RecAge 3 - declare State
+KPFM - Predator - Penguin RecAge 3 - end setup
+KPFM - Predator - Penguin RecAge 4 - create environment
+KPFM - Predator - Penguin RecAge 4 - set TimeSteps
+KPFM - Predator - Penguin RecAge 4 - set Ancillary functions
+KPFM - Predator - Penguin RecAge 4 - declare State
+KPFM - Predator - Penguin RecAge 4 - end setup
+KPFM - Predator - Penguin RecAge 5 - create environment
+KPFM - Predator - Penguin RecAge 5 - set TimeSteps
+KPFM - Predator - Penguin RecAge 5 - set Ancillary functions
+KPFM - Predator - Penguin RecAge 5 - declare State
+KPFM - Predator - Penguin RecAge 5 - end setup
+KPFM - Predator - Seal - create environment
+KPFM - Predator - Seal - set TimeSteps
+KPFM - Predator - Seal - set Ancillary functions
+KPFM - Predator - Seal - declare State
+KPFM - Predator - Seal - end setup
+KPFM - Predator - FishA2F1 - create environment
+KPFM - Predator - FishA2F1 - set TimeSteps
+KPFM - Predator - FishA2F1 - set Ancillary functions
+KPFM - Predator - FishA2F1 - declare State
+KPFM - Predator - FishA2F1 - end setup
+KPFM - Predator - FishA2F2 - create environment
+KPFM - Predator - FishA2F2 - set TimeSteps
+KPFM - Predator - FishA2F2 - set Ancillary functions
+KPFM - Predator - FishA2F2 - declare State
+KPFM - Predator - FishA2F2 - end setup
+KPFM - Predator - FishA2F3 - create environment
+KPFM - Predator - FishA2F3 - set TimeSteps
+KPFM - Predator - FishA2F3 - set Ancillary functions
+KPFM - Predator - FishA2F3 - declare State
+KPFM - Predator - FishA2F3 - end setup
+KPFM - Predator - FishA3F1 - create environment
+KPFM - Predator - FishA3F1 - set TimeSteps
+KPFM - Predator - FishA3F1 - set Ancillary functions
+KPFM - Predator - FishA3F1 - declare State
+KPFM - Predator - FishA3F1 - end setup
+KPFM - Predator - Whale - create environment
+KPFM - Predator - Whale - set TimeSteps
+KPFM - Predator - Whale - set Ancillary functions
+KPFM - Predator - Whale - declare State
+KPFM - Predator - Whale - end setup
+Loaded Biota - ElementsN = 10
+KPFM - Fishery - Fishery - create environment
+KPFM - Fishery - Fishery - set TimeSteps
+KPFM - Fishery - Fishery - set Ancillary functions
+KPFM - Fishery - Fishery - declare State
+KPFM - Fishery - Fishery - end setup
+Loaded Activity - ElementsN = 1
+KPFM - Manager - SSMUtac - create environment
+KPFM - Manager - SSMUtac - set TimeSteps
+KPFM - Manager - SSMUtac - set Ancillary functions
+KPFM - Manager - SSMUtac - declare State
+KPFM - Manager - SSMUtac - end setup
+Loaded Management - ElementsN = 1
+Loaded Output - ElementsN = 0
+Loaded Presentation - ElementsN = 0
+Finished loading universe
+Starting EPOC Controller...
+        ID: 11001
+ Full Name: EPOC - Ecosystem Productivity Ocean and Climate - Coupled Ocean Ecology Model System
+Short Name: EPOC
+  Revision: 0.5.1
+   Authors: A.Constable, T.Robertson
+ Last Edit: 25 May 2012
+Calendar setup...
+  accumulate time steps from all elements
+     Universe - Module 1: Environment
+                   elementsN = 1
+     Universe - Module 2: Biota
+                   elementsN = 10
+     Universe - Module 3: Activity
+                   elementsN = 1
+     Universe - Module 4: Management
+                   elementsN = 1
+     Universe - Module 5: Output
+                   elementsN = 0
+     Universe - Module 6: Presentation
+                   elementsN = 0
+  establish time series of periods
+  create periods
+  set up timestep data...
+  convert timesteps to periods...
+     Module 1: Environment
+      elementsN = 1
+      setting up element KrillEnv
+     Module 2: Biota
+      elementsN = 10
+      setting up element Krill
+      setting up element PenguinsA3
+      setting up element PenguinsA4
+      setting up element PenguinsA5
+      setting up element Seals
+      setting up element FishA2F1
+      setting up element FishA2F2
+      setting up element FishA2F3
+      setting up element FishA3F1
+      setting up element Whales
+     Module 3: Activity
+      elementsN = 1
+      setting up element KrillFishery
+     Module 4: Management
+      elementsN = 1
+      setting up element SSMUtac
+  generate action matrix for each period...
+     Module 1: Environment
+      elementsN = 1
+          Element 1: KrillEnv
+     Module 2: Biota
+      elementsN = 10
+          Element 1: Krill
+          Element 2: PenguinsA3
+          Element 3: PenguinsA4
+          Element 4: PenguinsA5
+          Element 5: Seals
+          Element 6: FishA2F1
+          Element 7: FishA2F2
+          Element 8: FishA2F3
+          Element 9: FishA3F1
+          Element 10: Whales
+     Module 3: Activity
+      elementsN = 1
+          Element 1: KrillFishery
+     Module 4: Management
+      elementsN = 1
+          Element 1: SSMUtac
+     Module 5: Output
+      elementsN = 0
+     Module 6: Presentation
+      elementsN = 0
+Configured Calendar
+Universe setup...
+  accumulate reference IDs for elements
+   Setting up Module 1: Environment (1 element)
+      Setting up element KrillEnv
+   Setting up Module 2: Biota (10 elements)
+      Setting up element Krill
+      Setting up element PenguinsA3
+      Setting up element PenguinsA4
+      Setting up element PenguinsA5
+      Setting up element Seals
+      Setting up element FishA2F1
+      Setting up element FishA2F2
+      Setting up element FishA2F3
+      Setting up element FishA3F1
+      Setting up element Whales
+   Setting up Module 3: Activity (1 element)
+      Setting up element KrillFishery
+   Setting up Module 4: Management (1 element)
+      Setting up element SSMUtac
+   Setting up Module 5: Output (0 elements)
+   Setting up Module 6: Presentation (0 elements)
+Configured relative universe according to calendar
+Outputing Calendar...
+Starting simulation...
+Initialising Scenario 1...
+General Environmental Variable - setting file for general variable data
+
+Commencing Scenario 1...
+General Environmental Variable - initialise replicate trial
+
+Management - setting file of deviates for surveys
+Searching for survey deviates file at: C:/_proj/EPOC/__testFOOSA/runtime/SurveyDevs0101.dat
+Survey deviates - creating new file
+Survey deviates - checking file and making ready for scenarios
+	Opened Survey deviates File
+	Survey Deviates       : SurveyDevs0101.dat
+	Polygons              : 15
+	Scenarios             : 1
+	Surveys per scenario  : 1
+	Survey deviates - file ready to read
+
+Replicate 1...
+
+Year 1950 : Period 1
+Year 1950 : Period 2
+Year 1950 : Period 3
+Year 1950 : Period 4
+Year 1950 : Period 5
+Year 1950 : Period 6
+Year 1951 : Period 1
+Year 1951 : Period 2
+Year 1951 : Period 3
+Year 1951 : Period 4
+Year 1951 : Period 5
+Year 1951 : Period 6
+Year 1952 : Period 1
+Year 1952 : Period 2
+Year 1952 : Period 3
+Year 1952 : Period 4
+Year 1952 : Period 5
+Year 1952 : Period 6
+Year 1953 : Period 1
+Year 1953 : Period 2
+Year 1953 : Period 3
+Year 1953 : Period 4
+Year 1953 : Period 5
+Year 1953 : Period 6
+Year 1954 : Period 1
+Year 1954 : Period 2
+Year 1954 : Period 3
+Year 1954 : Period 4
+Year 1954 : Period 5
+Year 1954 : Period 6
+Year 1955 : Period 1
+Year 1955 : Period 2
+Year 1955 : Period 3
+Year 1955 : Period 4
+Year 1955 : Period 5
+Year 1955 : Period 6
+Year 1956 : Period 1
+Year 1956 : Period 2
+Year 1956 : Period 3
+Year 1956 : Period 4
+Year 1956 : Period 5
+Year 1956 : Period 6
+Year 1957 : Period 1
+Year 1957 : Period 2
+Year 1957 : Period 3
+Year 1957 : Period 4
+Year 1957 : Period 5
+Year 1957 : Period 6
+Year 1958 : Period 1
+Year 1958 : Period 2
+Year 1958 : Period 3
+Year 1958 : Period 4
+Year 1958 : Period 5
+Year 1958 : Period 6
+Year 1959 : Period 1
+Year 1959 : Period 2
+Year 1959 : Period 3
+Year 1959 : Period 4
+Year 1959 : Period 5
+Year 1959 : Period 6
+Year 1960 : Period 1
+Year 1960 : Period 2
+Year 1960 : Period 3
+Year 1960 : Period 4
+Year 1960 : Period 5
+Year 1960 : Period 6
+
+General Environmental Variable - initialise replicate trial
+
+Management - setting file of deviates for surveys
+Searching for survey deviates file at: C:/_proj/EPOC/__testFOOSA/runtime/SurveyDevs0101.dat
+Survey deviates - creating new file
+Survey deviates - checking file and making ready for scenarios
+	Opened Survey deviates File
+	Survey Deviates       : SurveyDevs0101.dat
+	Polygons              : 15
+	Scenarios             : 1
+	Surveys per scenario  : 1
+	Survey deviates - file ready to read
+
+Replicate 2...
+
+Year 1950 : Period 1
+Year 1950 : Period 2
+Year 1950 : Period 3
+Year 1950 : Period 4
+Year 1950 : Period 5
+Year 1950 : Period 6
+Year 1951 : Period 1
+Year 1951 : Period 2
+Year 1951 : Period 3
+Year 1951 : Period 4
+Year 1951 : Period 5
+Year 1951 : Period 6
+Year 1952 : Period 1
+Year 1952 : Period 2
+Year 1952 : Period 3
+Year 1952 : Period 4
+Year 1952 : Period 5
+Year 1952 : Period 6
+Year 1953 : Period 1
+Year 1953 : Period 2
+Year 1953 : Period 3
+Year 1953 : Period 4
+Year 1953 : Period 5
+Year 1953 : Period 6
+Year 1954 : Period 1
+Year 1954 : Period 2
+Year 1954 : Period 3
+Year 1954 : Period 4
+Year 1954 : Period 5
+Year 1954 : Period 6
+Year 1955 : Period 1
+Year 1955 : Period 2
+Year 1955 : Period 3
+Year 1955 : Period 4
+Year 1955 : Period 5
+Year 1955 : Period 6
+Year 1956 : Period 1
+Year 1956 : Period 2
+Year 1956 : Period 3
+Year 1956 : Period 4
+Year 1956 : Period 5
+Year 1956 : Period 6
+Year 1957 : Period 1
+Year 1957 : Period 2
+Year 1957 : Period 3
+Year 1957 : Period 4
+Year 1957 : Period 5
+Year 1957 : Period 6
+Year 1958 : Period 1
+Year 1958 : Period 2
+Year 1958 : Period 3
+Year 1958 : Period 4
+Year 1958 : Period 5
+Year 1958 : Period 6
+Year 1959 : Period 1
+Year 1959 : Period 2
+Year 1959 : Period 3
+Year 1959 : Period 4
+Year 1959 : Period 5
+Year 1959 : Period 6
+Year 1960 : Period 1
+Year 1960 : Period 2
+Year 1960 : Period 3
+Year 1960 : Period 4
+Year 1960 : Period 5
+Year 1960 : Period 6
+
+General Environmental Variable - initialise replicate trial
+
+Management - setting file of deviates for surveys
+Searching for survey deviates file at: C:/_proj/EPOC/__testFOOSA/runtime/SurveyDevs0101.dat
+Survey deviates - creating new file
+Survey deviates - checking file and making ready for scenarios
+	Opened Survey deviates File
+	Survey Deviates       : SurveyDevs0101.dat
+	Polygons              : 15
+	Scenarios             : 1
+	Surveys per scenario  : 1
+	Survey deviates - file ready to read
+
+Replicate 3...
+
+Year 1950 : Period 1
+Year 1950 : Period 2
+Year 1950 : Period 3
+Year 1950 : Period 4
+Year 1950 : Period 5
+Year 1950 : Period 6
+Year 1951 : Period 1
+Year 1951 : Period 2
+Year 1951 : Period 3
+Year 1951 : Period 4
+Year 1951 : Period 5
+Year 1951 : Period 6
+Year 1952 : Period 1
+Year 1952 : Period 2
+Year 1952 : Period 3
+Year 1952 : Period 4
+Year 1952 : Period 5
+Year 1952 : Period 6
+Year 1953 : Period 1
+Year 1953 : Period 2
+Year 1953 : Period 3
+Year 1953 : Period 4
+Year 1953 : Period 5
+Year 1953 : Period 6
+Year 1954 : Period 1
+Year 1954 : Period 2
+Year 1954 : Period 3
+Year 1954 : Period 4
+Year 1954 : Period 5
+Year 1954 : Period 6
+Year 1955 : Period 1
+Year 1955 : Period 2
+Year 1955 : Period 3
+Year 1955 : Period 4
+Year 1955 : Period 5
+Year 1955 : Period 6
+Year 1956 : Period 1
+Year 1956 : Period 2
+Year 1956 : Period 3
+Year 1956 : Period 4
+Year 1956 : Period 5
+Year 1956 : Period 6
+Year 1957 : Period 1
+Year 1957 : Period 2
+Year 1957 : Period 3
+Year 1957 : Period 4
+Year 1957 : Period 5
+Year 1957 : Period 6
+Year 1958 : Period 1
+Year 1958 : Period 2
+Year 1958 : Period 3
+Year 1958 : Period 4
+Year 1958 : Period 5
+Year 1958 : Period 6
+Year 1959 : Period 1
+Year 1959 : Period 2
+Year 1959 : Period 3
+Year 1959 : Period 4
+Year 1959 : Period 5
+Year 1959 : Period 6
+Year 1960 : Period 1
+Year 1960 : Period 2
+Year 1960 : Period 3
+Year 1960 : Period 4
+Year 1960 : Period 5
+Year 1960 : Period 6
+
+General Environmental Variable - initialise replicate trial
+
+Management - setting file of deviates for surveys
+Searching for survey deviates file at: C:/_proj/EPOC/__testFOOSA/runtime/SurveyDevs0101.dat
+Survey deviates - creating new file
+Survey deviates - checking file and making ready for scenarios
+	Opened Survey deviates File
+	Survey Deviates       : SurveyDevs0101.dat
+	Polygons              : 15
+	Scenarios             : 1
+	Surveys per scenario  : 1
+	Survey deviates - file ready to read
+
+Replicate 4...
+
+Year 1950 : Period 1
+Year 1950 : Period 2
+Year 1950 : Period 3
+Year 1950 : Period 4
+Year 1950 : Period 5
+Year 1950 : Period 6
+Year 1951 : Period 1
+Year 1951 : Period 2
+Year 1951 : Period 3
+Year 1951 : Period 4
+Year 1951 : Period 5
+Year 1951 : Period 6
+Year 1952 : Period 1
+Year 1952 : Period 2
+Year 1952 : Period 3
+Year 1952 : Period 4
+Year 1952 : Period 5
+Year 1952 : Period 6
+Year 1953 : Period 1
+Year 1953 : Period 2
+Year 1953 : Period 3
+Year 1953 : Period 4
+Year 1953 : Period 5
+Year 1953 : Period 6
+Year 1954 : Period 1
+Year 1954 : Period 2
+Year 1954 : Period 3
+Year 1954 : Period 4
+Year 1954 : Period 5
+Year 1954 : Period 6
+Year 1955 : Period 1
+Year 1955 : Period 2
+Year 1955 : Period 3
+Year 1955 : Period 4
+Year 1955 : Period 5
+Year 1955 : Period 6
+Year 1956 : Period 1
+Year 1956 : Period 2
+Year 1956 : Period 3
+Year 1956 : Period 4
+Year 1956 : Period 5
+Year 1956 : Period 6
+Year 1957 : Period 1
+Year 1957 : Period 2
+Year 1957 : Period 3
+Year 1957 : Period 4
+Year 1957 : Period 5
+Year 1957 : Period 6
+Year 1958 : Period 1
+Year 1958 : Period 2
+Year 1958 : Period 3
+Year 1958 : Period 4
+Year 1958 : Period 5
+Year 1958 : Period 6
+Year 1959 : Period 1
+Year 1959 : Period 2
+Year 1959 : Period 3
+Year 1959 : Period 4
+Year 1959 : Period 5
+Year 1959 : Period 6
+Year 1960 : Period 1
+Year 1960 : Period 2
+Year 1960 : Period 3
+Year 1960 : Period 4
+Year 1960 : Period 5
+Year 1960 : Period 6
+
+General Environmental Variable - initialise replicate trial
+
+Management - setting file of deviates for surveys
+Searching for survey deviates file at: C:/_proj/EPOC/__testFOOSA/runtime/SurveyDevs0101.dat
+Survey deviates - creating new file
+Survey deviates - checking file and making ready for scenarios
+	Opened Survey deviates File
+	Survey Deviates       : SurveyDevs0101.dat
+	Polygons              : 15
+	Scenarios             : 1
+	Surveys per scenario  : 1
+	Survey deviates - file ready to read
+
+Replicate 5...
+
+Year 1950 : Period 1
+Year 1950 : Period 2
+Year 1950 : Period 3
+Year 1950 : Period 4
+Year 1950 : Period 5
+Year 1950 : Period 6
+Year 1951 : Period 1
+Year 1951 : Period 2
+Year 1951 : Period 3
+Year 1951 : Period 4
+Year 1951 : Period 5
+Year 1951 : Period 6
+Year 1952 : Period 1
+Year 1952 : Period 2
+Year 1952 : Period 3

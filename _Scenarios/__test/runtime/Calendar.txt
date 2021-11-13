@@ -1,0 +1,796 @@
+Calendar - KPFM Scenario parameters 0801
+Number of Periods = 12
+
+
+##################################################################
+Period 1
+##################################################################
+
+Period Number                   = 1
+Last julian day of period       = 31
+Knife-edge period (logical)     = FALSE
+Proportion of Year              = 0.08493151
+Start of period (propn of year) = 0
+End of period (propn of year)   = 0.08493151
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     Food                     1          1              1
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+Environment  Food                     1     1     31     printState     
+
+During
+
+NA           NA                      NA    NA     NA     NA             
+
+After
+
+Environment  Food                     1     1     31     update.environm
+
+##################################################################
+Period 2
+##################################################################
+
+Period Number                   = 2
+Last julian day of period       = 61
+Knife-edge period (logical)     = FALSE
+Proportion of Year              = 0.08219178
+Start of period (propn of year) = 0.08493151
+End of period (propn of year)   = 0.1671233
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     Food                     2          1              1
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+Environment  Food                     1     2     61     printState     
+
+During
+
+NA           NA                      NA    NA     NA     NA             
+
+After
+
+Environment  Food                     1     2     61     update.environm
+
+##################################################################
+Period 3
+##################################################################
+
+Period Number                   = 3
+Last julian day of period       = 92
+Knife-edge period (logical)     = FALSE
+Proportion of Year              = 0.08493151
+Start of period (propn of year) = 0.1671233
+End of period (propn of year)   = 0.2520548
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     Food                     3          1              1
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+Environment  Food                     1     3     92     printState     
+
+During
+
+NA           NA                      NA    NA     NA     NA             
+
+After
+
+Environment  Food                     1     3     92     update.environm
+
+##################################################################
+Period 4
+##################################################################
+
+Period Number                   = 4
+Last julian day of period       = 122
+Knife-edge period (logical)     = FALSE
+Proportion of Year              = 0.08219178
+Start of period (propn of year) = 0.2520548
+End of period (propn of year)   = 0.3342466
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     Food                     4          1              1
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+Environment  Food                     1     4    122     printState     
+
+During
+
+NA           NA                      NA    NA     NA     NA             
+
+After
+
+Environment  Food                     1     4    122     update.environm
+
+##################################################################
+Period 5
+##################################################################
+
+Period Number                   = 5
+Last julian day of period       = 153
+Knife-edge period (logical)     = FALSE
+Proportion of Year              = 0.08493151
+Start of period (propn of year) = 0.3342466
+End of period (propn of year)   = 0.4191781
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     Food                     5          1              1
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+Environment  Food                     1     5    153     printState     
+
+During
+
+NA           NA                      NA    NA     NA     NA             
+
+After
+
+Environment  Food                     1     5    153     update.environm
+
+##################################################################
+Period 6
+##################################################################
+
+Period Number                   = 6
+Last julian day of period       = 183
+Knife-edge period (logical)     = FALSE
+Proportion of Year              = 0.08219178
+Start of period (propn of year) = 0.4191781
+End of period (propn of year)   = 0.5013699
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     Food                     6          1              1
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+Environment  Food                     1     6    183     printState     
+
+During
+
+NA           NA                      NA    NA     NA     NA             
+
+After
+
+Environment  Food                     1     6    183     update.environm
+
+##################################################################
+Period 7
+##################################################################
+
+Period Number                   = 7
+Last julian day of period       = 213
+Knife-edge period (logical)     = FALSE
+Proportion of Year              = 0.08219178
+Start of period (propn of year) = 0.5013699
+End of period (propn of year)   = 0.5835616
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     Food                     7          1              1
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+Environment  Food                     1     7    213     printState     
+
+During
+
+NA           NA                      NA    NA     NA     NA             
+
+After
+
+Environment  Food                     1     7    213     update.environm
+
+##################################################################
+Period 8
+##################################################################
+
+Period Number                   = 8
+Last julian day of period       = 244
+Knife-edge period (logical)     = FALSE
+Proportion of Year              = 0.08493151
+Start of period (propn of year) = 0.5835616
+End of period (propn of year)   = 0.6684932
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     Food                     8          1              1
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+Environment  Food                     1     8    244     printState     
+
+During
+
+NA           NA                      NA    NA     NA     NA             
+
+After
+
+Environment  Food                     1     8    244     update.environm
+
+##################################################################
+Period 9
+##################################################################
+
+Period Number                   = 9
+Last julian day of period       = 274
+Knife-edge period (logical)     = FALSE
+Proportion of Year              = 0.08219178
+Start of period (propn of year) = 0.6684932
+End of period (propn of year)   = 0.7506849
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     Food                     9          1              1
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+Environment  Food                     1     9    274     printState     
+
+During
+
+NA           NA                      NA    NA     NA     NA             
+
+After
+
+Environment  Food                     1     9    274     update.environm
+
+##################################################################
+Period 10
+##################################################################
+
+Period Number                   = 10
+Last julian day of period       = 305
+Knife-edge period (logical)     = FALSE
+Proportion of Year              = 0.08493151
+Start of period (propn of year) = 0.7506849
+End of period (propn of year)   = 0.8356164
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     Food                    10          1              1
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+Environment  Food                     1    10    305     printState     
+
+During
+
+NA           NA                      NA    NA     NA     NA             
+
+After
+
+Environment  Food                     1    10    305     update.environm
+
+##################################################################
+Period 11
+##################################################################
+
+Period Number                   = 11
+Last julian day of period       = 335
+Knife-edge period (logical)     = FALSE
+Proportion of Year              = 0.08219178
+Start of period (propn of year) = 0.8356164
+End of period (propn of year)   = 0.9178082
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     Food                    11          1              1
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+Environment  Food                     1    11    335     printState     
+
+During
+
+NA           NA                      NA    NA     NA     NA             
+
+After
+
+Environment  Food                     1    11    335     update.environm
+
+##################################################################
+Period 12
+##################################################################
+
+Period Number                   = 12
+Last julian day of period       = 365
+Knife-edge period (logical)     = FALSE
+Proportion of Year              = 0.08219178
+Start of period (propn of year) = 0.9178082
+End of period (propn of year)   = 1
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     Food                    12          1              1
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+Environment  Food                     1    12    365     printState     
+
+During
+
+NA           NA                      NA    NA     NA     NA             
+
+After
+
+Environment  Food                     1    12    365     update.environm
+

@@ -1,0 +1,766 @@
+Calendar - KPFM Scenario parameters 0801
+Number of Periods = 6
+
+
+##################################################################
+Period 1
+##################################################################
+
+Period Number                   = 1
+Last julian day of period       = 32
+Knife-edge period (logical)     = FALSE
+Proportion of Year              = 0.08767123
+Start of period (propn of year) = 0
+End of period (propn of year)   = 0.08767123
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     KrillEnv                 1          3          0.088
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Check - Module in Universe is  = Biota
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     Krill                    1          4          0.176
+     PenguinsA3               1          4          0.176
+     PenguinsA4               1          4          0.176
+     PenguinsA5               1          4          0.176
+     Seals                    1          4          0.176
+     FishA2F1                 1          4          0.176
+     FishA2F2                 1          4          0.176
+     FishA2F3                 1          4          0.176
+     FishA3F1                 1          4          0.176
+     Whales                   1          4          0.176
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Check - Module in Universe is  = Activity
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     KrillFishery             1          2          0.088
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Check - Module in Universe is  = Management
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     SSMUtac                  1          2          0.508
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+Management   SSMUtac                  1     1     32     catchRemaining 
+
+During
+
+Biota        Krill                    1     1     32     mortality      
+Biota        Krill                    1     1     32     migrate        
+Biota        PenguinsA3               2     1     32     consume        
+Biota        PenguinsA3               2     1     32     mortality      
+Biota        PenguinsA4               3     1     32     consume        
+Biota        PenguinsA4               3     1     32     mortality      
+Biota        PenguinsA5               4     1     32     consume        
+Biota        PenguinsA5               4     1     32     mortality      
+Biota        Seals                    5     1     32     consume        
+Biota        Seals                    5     1     32     mortality      
+Biota        FishA2F1                 6     1     32     consume        
+Biota        FishA2F1                 6     1     32     mortality      
+Biota        FishA2F2                 7     1     32     consume        
+Biota        FishA2F2                 7     1     32     mortality      
+Biota        FishA2F3                 8     1     32     consume        
+Biota        FishA2F3                 8     1     32     mortality      
+Biota        FishA3F1                 9     1     32     consume        
+Biota        FishA3F1                 9     1     32     mortality      
+Biota        Whales                  10     1     32     consume        
+Biota        Whales                  10     1     32     mortality      
+Activity     KrillFishery             1     1     32     catch          
+
+After
+
+Biota        PenguinsA3               2     1     32     update_rep_heal
+Biota        PenguinsA4               3     1     32     update_rep_heal
+Biota        PenguinsA5               4     1     32     update_rep_heal
+Biota        Seals                    5     1     32     update_rep_heal
+Biota        FishA2F1                 6     1     32     update_rep_heal
+Biota        FishA2F2                 7     1     32     update_rep_heal
+Biota        FishA2F3                 8     1     32     update_rep_heal
+Biota        FishA3F1                 9     1     32     update_rep_heal
+Biota        Whales                  10     1     32     update_rep_heal
+Activity     KrillFishery             1     1     32     updateCatchReco
+Management   SSMUtac                  1     1     32     krillSurvey    
+
+##################################################################
+Period 2
+##################################################################
+
+Period Number                   = 2
+Last julian day of period       = 90
+Knife-edge period (logical)     = FALSE
+Proportion of Year              = 0.1589041
+Start of period (propn of year) = 0.08767123
+End of period (propn of year)   = 0.2465753
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     KrillEnv                 1          4          0.159
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Check - Module in Universe is  = Biota
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     Krill                    1          5          0.319
+     PenguinsA3               1          5          0.319
+     PenguinsA4               1          5          0.319
+     PenguinsA5               1          5          0.319
+     Seals                    1          5          0.319
+     FishA2F1                 1          5          0.319
+     FishA2F2                 1          5          0.319
+     FishA2F3                 1          5          0.319
+     FishA3F1                 1          5          0.319
+     Whales                   1          5          0.319
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Check - Module in Universe is  = Activity
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     KrillFishery             1          3          0.159
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Check - Module in Universe is  = Management
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     SSMUtac                  2          1          0.192
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+Management   SSMUtac                  1     2     90     catchRemaining 
+
+During
+
+Biota        Krill                    1     2     90     mortality      
+Biota        Krill                    1     2     90     migrate        
+Biota        PenguinsA3               2     2     90     consume        
+Biota        PenguinsA3               2     2     90     mortality      
+Biota        PenguinsA4               3     2     90     consume        
+Biota        PenguinsA4               3     2     90     mortality      
+Biota        PenguinsA5               4     2     90     consume        
+Biota        PenguinsA5               4     2     90     mortality      
+Biota        Seals                    5     2     90     consume        
+Biota        Seals                    5     2     90     mortality      
+Biota        FishA2F1                 6     2     90     consume        
+Biota        FishA2F1                 6     2     90     mortality      
+Biota        FishA2F2                 7     2     90     consume        
+Biota        FishA2F2                 7     2     90     mortality      
+Biota        FishA2F3                 8     2     90     consume        
+Biota        FishA2F3                 8     2     90     mortality      
+Biota        FishA3F1                 9     2     90     consume        
+Biota        FishA3F1                 9     2     90     mortality      
+Biota        Whales                  10     2     90     consume        
+Biota        Whales                  10     2     90     mortality      
+Activity     KrillFishery             1     2     90     catch          
+
+After
+
+Biota        Krill                    1     2     90     printState     
+Biota        PenguinsA3               2     2     90     update_rep_heal
+Biota        PenguinsA3               2     2     90     update_age     
+Biota        PenguinsA3               2     2     90     reproduce      
+Biota        PenguinsA3               2     2     90     breedersToNonbr
+Biota        PenguinsA3               2     2     90     printState     
+Biota        PenguinsA4               3     2     90     update_rep_heal
+Biota        PenguinsA4               3     2     90     update_age     
+Biota        PenguinsA4               3     2     90     reproduce      
+Biota        PenguinsA4               3     2     90     breedersToNonbr
+Biota        PenguinsA4               3     2     90     printState     
+Biota        PenguinsA5               4     2     90     update_rep_heal
+Biota        PenguinsA5               4     2     90     update_age     
+Biota        PenguinsA5               4     2     90     reproduce      
+Biota        PenguinsA5               4     2     90     breedersToNonbr
+Biota        PenguinsA5               4     2     90     printState     
+Biota        Seals                    5     2     90     update_rep_heal
+Biota        Seals                    5     2     90     update_age     
+Biota        Seals                    5     2     90     reproduce      
+Biota        Seals                    5     2     90     breedersToNonbr
+Biota        Seals                    5     2     90     printState     
+Biota        FishA2F1                 6     2     90     update_rep_heal
+Biota        FishA2F1                 6     2     90     update_age     
+Biota        FishA2F1                 6     2     90     reproduce      
+Biota        FishA2F1                 6     2     90     breedersToNonbr
+Biota        FishA2F1                 6     2     90     printState     
+Biota        FishA2F2                 7     2     90     update_rep_heal
+Biota        FishA2F2                 7     2     90     update_age     
+Biota        FishA2F2                 7     2     90     reproduce      
+Biota        FishA2F2                 7     2     90     breedersToNonbr
+Biota        FishA2F2                 7     2     90     printState     
+Biota        FishA2F3                 8     2     90     update_rep_heal
+Biota        FishA2F3                 8     2     90     update_age     
+Biota        FishA2F3                 8     2     90     reproduce      
+Biota        FishA2F3                 8     2     90     breedersToNonbr
+Biota        FishA2F3                 8     2     90     printState     
+Biota        FishA3F1                 9     2     90     update_rep_heal
+Biota        FishA3F1                 9     2     90     update_age     
+Biota        FishA3F1                 9     2     90     reproduce      
+Biota        FishA3F1                 9     2     90     breedersToNonbr
+Biota        FishA3F1                 9     2     90     printState     
+Biota        Whales                  10     2     90     update_rep_heal
+Biota        Whales                  10     2     90     update_age     
+Biota        Whales                  10     2     90     reproduce      
+Biota        Whales                  10     2     90     breedersToNonbr
+Biota        Whales                  10     2     90     printState     
+Activity     KrillFishery             1     2     90     updateCatchReco
+
+##################################################################
+Period 3
+##################################################################
+
+Period Number                   = 3
+Last julian day of period       = 273
+Knife-edge period (logical)     = FALSE
+Proportion of Year              = 0.5013699
+Start of period (propn of year) = 0.2465753
+End of period (propn of year)   = 0.7479452
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     KrillEnv                 1          5          0.501
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Check - Module in Universe is  = Biota
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     Krill                    2          1              1
+     PenguinsA3               2          1              1
+     PenguinsA4               2          1              1
+     PenguinsA5               2          1              1
+     Seals                    2          1              1
+     FishA2F1                 2          1              1
+     FishA2F2                 2          1              1
+     FishA2F3                 2          1              1
+     FishA3F1                 2          1              1
+     Whales                   2          1              1
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Check - Module in Universe is  = Activity
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     KrillFishery             1          4          0.501
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Check - Module in Universe is  = Management
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     SSMUtac                  2          2          0.606
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+Biota        Krill                    1     3    273     recruit        
+Management   SSMUtac                  1     3    273     catchRemaining 
+
+During
+
+Biota        Krill                    1     3    273     mortality      
+Biota        Krill                    1     3    273     migrate        
+Biota        PenguinsA3               2     3    273     consume        
+Biota        PenguinsA3               2     3    273     mortality      
+Biota        PenguinsA4               3     3    273     consume        
+Biota        PenguinsA4               3     3    273     mortality      
+Biota        PenguinsA5               4     3    273     consume        
+Biota        PenguinsA5               4     3    273     mortality      
+Biota        Seals                    5     3    273     consume        
+Biota        Seals                    5     3    273     mortality      
+Biota        FishA2F1                 6     3    273     consume        
+Biota        FishA2F1                 6     3    273     mortality      
+Biota        FishA2F2                 7     3    273     consume        
+Biota        FishA2F2                 7     3    273     mortality      
+Biota        FishA2F3                 8     3    273     consume        
+Biota        FishA2F3                 8     3    273     mortality      
+Biota        FishA3F1                 9     3    273     consume        
+Biota        FishA3F1                 9     3    273     mortality      
+Biota        Whales                  10     3    273     consume        
+Biota        Whales                  10     3    273     mortality      
+Activity     KrillFishery             1     3    273     catch          
+
+After
+
+Biota        Krill                    1     3    273     printState     
+Biota        PenguinsA3               2     3    273     update_rep_heal
+Biota        PenguinsA3               2     3    273     printState     
+Biota        PenguinsA4               3     3    273     update_rep_heal
+Biota        PenguinsA4               3     3    273     printState     
+Biota        PenguinsA5               4     3    273     update_rep_heal
+Biota        PenguinsA5               4     3    273     printState     
+Biota        Seals                    5     3    273     update_rep_heal
+Biota        Seals                    5     3    273     printState     
+Biota        FishA2F1                 6     3    273     update_rep_heal
+Biota        FishA2F1                 6     3    273     printState     
+Biota        FishA2F2                 7     3    273     update_rep_heal
+Biota        FishA2F2                 7     3    273     printState     
+Biota        FishA2F3                 8     3    273     update_rep_heal
+Biota        FishA2F3                 8     3    273     printState     
+Biota        FishA3F1                 9     3    273     update_rep_heal
+Biota        FishA3F1                 9     3    273     printState     
+Biota        Whales                  10     3    273     update_rep_heal
+Biota        Whales                  10     3    273     printState     
+Activity     KrillFishery             1     3    273     updateCatchReco
+
+##################################################################
+Period 4
+##################################################################
+
+Period Number                   = 4
+Last julian day of period       = 274
+Knife-edge period (logical)     = FALSE
+Proportion of Year              = 0.002739726
+Start of period (propn of year) = 0.7479452
+End of period (propn of year)   = 0.7506849
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     KrillEnv                 1          6          0.003
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Check - Module in Universe is  = Biota
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     Krill                    1          1          0.005
+     PenguinsA3               1          1          0.005
+     PenguinsA4               1          1          0.005
+     PenguinsA5               1          1          0.005
+     Seals                    1          1          0.005
+     FishA2F1                 1          1          0.005
+     FishA2F2                 1          1          0.005
+     FishA2F3                 1          1          0.005
+     FishA3F1                 1          1          0.005
+     Whales                   1          1          0.005
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Check - Module in Universe is  = Activity
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     KrillFishery             1          5          0.003
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Check - Module in Universe is  = Management
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     SSMUtac                  2          3          0.003
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+Biota        Krill                    1     4    274     reproduce      
+Biota        PenguinsA3               2     4    274     allocate_breede
+Biota        PenguinsA4               3     4    274     allocate_breede
+Biota        PenguinsA5               4     4    274     allocate_breede
+Biota        Seals                    5     4    274     allocate_breede
+Biota        FishA2F1                 6     4    274     allocate_breede
+Biota        FishA2F2                 7     4    274     allocate_breede
+Biota        FishA2F3                 8     4    274     allocate_breede
+Biota        FishA3F1                 9     4    274     allocate_breede
+Biota        Whales                  10     4    274     allocate_breede
+Management   SSMUtac                  1     4    274     catchRemaining 
+
+During
+
+Biota        Krill                    1     4    274     mortality      
+Biota        Krill                    1     4    274     migrate        
+Biota        PenguinsA3               2     4    274     consume        
+Biota        PenguinsA3               2     4    274     mortality      
+Biota        PenguinsA4               3     4    274     consume        
+Biota        PenguinsA4               3     4    274     mortality      
+Biota        PenguinsA5               4     4    274     consume        
+Biota        PenguinsA5               4     4    274     mortality      
+Biota        Seals                    5     4    274     consume        
+Biota        Seals                    5     4    274     mortality      
+Biota        FishA2F1                 6     4    274     consume        
+Biota        FishA2F1                 6     4    274     mortality      
+Biota        FishA2F2                 7     4    274     consume        
+Biota        FishA2F2                 7     4    274     mortality      
+Biota        FishA2F3                 8     4    274     consume        
+Biota        FishA2F3                 8     4    274     mortality      
+Biota        FishA3F1                 9     4    274     consume        
+Biota        FishA3F1                 9     4    274     mortality      
+Biota        Whales                  10     4    274     consume        
+Biota        Whales                  10     4    274     mortality      
+Activity     KrillFishery             1     4    274     catch          
+
+After
+
+Environment  KrillEnv                 1     4    274     update.environm
+Biota        PenguinsA3               2     4    274     update_rep_heal
+Biota        PenguinsA4               3     4    274     update_rep_heal
+Biota        PenguinsA5               4     4    274     update_rep_heal
+Biota        Seals                    5     4    274     update_rep_heal
+Biota        FishA2F1                 6     4    274     update_rep_heal
+Biota        FishA2F2                 7     4    274     update_rep_heal
+Biota        FishA2F3                 8     4    274     update_rep_heal
+Biota        FishA3F1                 9     4    274     update_rep_heal
+Biota        Whales                  10     4    274     update_rep_heal
+Activity     KrillFishery             1     4    274     updateCatchReco
+
+##################################################################
+Period 5
+##################################################################
+
+Period Number                   = 5
+Last julian day of period       = 334
+Knife-edge period (logical)     = FALSE
+Proportion of Year              = 0.1643836
+Start of period (propn of year) = 0.7506849
+End of period (propn of year)   = 0.9150685
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     KrillEnv                 1          1          0.164
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Check - Module in Universe is  = Biota
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     Krill                    1          2           0.33
+     PenguinsA3               1          2           0.33
+     PenguinsA4               1          2           0.33
+     PenguinsA5               1          2           0.33
+     Seals                    1          2           0.33
+     FishA2F1                 1          2           0.33
+     FishA2F2                 1          2           0.33
+     FishA2F3                 1          2           0.33
+     FishA3F1                 1          2           0.33
+     Whales                   1          2           0.33
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Check - Module in Universe is  = Activity
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     KrillFishery             1          6          0.164
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Check - Module in Universe is  = Management
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     SSMUtac                  2          4          0.199
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+Environment  KrillEnv                 1     5    334     printState     
+Management   SSMUtac                  1     5    334     catchRemaining 
+
+During
+
+Biota        Krill                    1     5    334     mortality      
+Biota        Krill                    1     5    334     migrate        
+Biota        PenguinsA3               2     5    334     consume        
+Biota        PenguinsA3               2     5    334     mortality      
+Biota        PenguinsA4               3     5    334     consume        
+Biota        PenguinsA4               3     5    334     mortality      
+Biota        PenguinsA5               4     5    334     consume        
+Biota        PenguinsA5               4     5    334     mortality      
+Biota        Seals                    5     5    334     consume        
+Biota        Seals                    5     5    334     mortality      
+Biota        FishA2F1                 6     5    334     consume        
+Biota        FishA2F1                 6     5    334     mortality      
+Biota        FishA2F2                 7     5    334     consume        
+Biota        FishA2F2                 7     5    334     mortality      
+Biota        FishA2F3                 8     5    334     consume        
+Biota        FishA2F3                 8     5    334     mortality      
+Biota        FishA3F1                 9     5    334     consume        
+Biota        FishA3F1                 9     5    334     mortality      
+Biota        Whales                  10     5    334     consume        
+Biota        Whales                  10     5    334     mortality      
+Activity     KrillFishery             1     5    334     catch          
+
+After
+
+Biota        PenguinsA3               2     5    334     update_rep_heal
+Biota        PenguinsA4               3     5    334     update_rep_heal
+Biota        PenguinsA5               4     5    334     update_rep_heal
+Biota        Seals                    5     5    334     update_rep_heal
+Biota        FishA2F1                 6     5    334     update_rep_heal
+Biota        FishA2F2                 7     5    334     update_rep_heal
+Biota        FishA2F3                 8     5    334     update_rep_heal
+Biota        FishA3F1                 9     5    334     update_rep_heal
+Biota        Whales                  10     5    334     update_rep_heal
+Activity     KrillFishery             1     5    334     updateCatchReco
+
+##################################################################
+Period 6
+##################################################################
+
+Period Number                   = 6
+Last julian day of period       = 365
+Knife-edge period (logical)     = FALSE
+Proportion of Year              = 0.08493151
+Start of period (propn of year) = 0.9150685
+End of period (propn of year)   = 1
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     KrillEnv                 1          2          0.085
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Check - Module in Universe is  = Biota
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     Krill                    1          3           0.17
+     PenguinsA3               1          3           0.17
+     PenguinsA4               1          3           0.17
+     PenguinsA5               1          3           0.17
+     Seals                    1          3           0.17
+     FishA2F1                 1          3           0.17
+     FishA2F2                 1          3           0.17
+     FishA2F3                 1          3           0.17
+     FishA3F1                 1          3           0.17
+     Whales                   1          3           0.17
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Check - Module in Universe is  = Activity
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     KrillFishery             1          1          0.085
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Check - Module in Universe is  = Management
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     SSMUtac                  1          1          0.492
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+Activity     KrillFishery             1     6    365     setFishingStrat
+Activity     KrillFishery             1     6    365     seasonAccountin
+Management   SSMUtac                  1     6    365     catchRemaining 
+Management   SSMUtac                  1     6    365     printState     
+Management   SSMUtac                  1     6    365     setHarvestStrat
+Management   SSMUtac                  1     6    365     startSeason    
+
+During
+
+Biota        Krill                    1     6    365     mortality      
+Biota        Krill                    1     6    365     migrate        
+Biota        PenguinsA3               2     6    365     consume        
+Biota        PenguinsA3               2     6    365     mortality      
+Biota        PenguinsA4               3     6    365     consume        
+Biota        PenguinsA4               3     6    365     mortality      
+Biota        PenguinsA5               4     6    365     consume        
+Biota        PenguinsA5               4     6    365     mortality      
+Biota        Seals                    5     6    365     consume        
+Biota        Seals                    5     6    365     mortality      
+Biota        FishA2F1                 6     6    365     consume        
+Biota        FishA2F1                 6     6    365     mortality      
+Biota        FishA2F2                 7     6    365     consume        
+Biota        FishA2F2                 7     6    365     mortality      
+Biota        FishA2F3                 8     6    365     consume        
+Biota        FishA2F3                 8     6    365     mortality      
+Biota        FishA3F1                 9     6    365     consume        
+Biota        FishA3F1                 9     6    365     mortality      
+Biota        Whales                  10     6    365     consume        
+Biota        Whales                  10     6    365     mortality      
+Activity     KrillFishery             1     6    365     catch          
+
+After
+
+Biota        PenguinsA3               2     6    365     update_rep_heal
+Biota        PenguinsA4               3     6    365     update_rep_heal
+Biota        PenguinsA5               4     6    365     update_rep_heal
+Biota        Seals                    5     6    365     update_rep_heal
+Biota        FishA2F1                 6     6    365     update_rep_heal
+Biota        FishA2F2                 7     6    365     update_rep_heal
+Biota        FishA2F3                 8     6    365     update_rep_heal
+Biota        FishA3F1                 9     6    365     update_rep_heal
+Biota        Whales                  10     6    365     update_rep_heal
+Activity     KrillFishery             1     6    365     updateCatchReco
+

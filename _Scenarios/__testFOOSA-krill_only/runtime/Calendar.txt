@@ -1,0 +1,288 @@
+Calendar - KPFM Scenario parameters 0801
+Number of Periods = 4
+
+
+##################################################################
+Period 1
+##################################################################
+
+Period Number                   = 1
+Last julian day of period       = 90
+Knife-edge period (logical)     = FALSE
+Proportion of Year              = 0.2465753
+Start of period (propn of year) = 0
+End of period (propn of year)   = 0.2465753
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     KrillEnv                 1          2          0.247
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Check - Module in Universe is  = Biota
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     Krill                    1          3          0.495
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+NA           NA                      NA    NA     NA     NA             
+
+During
+
+Biota        Krill                    1     1     90     mortality      
+Biota        Krill                    1     1     90     migrate        
+
+After
+
+Biota        Krill                    1     1     90     printState     
+
+##################################################################
+Period 2
+##################################################################
+
+Period Number                   = 2
+Last julian day of period       = 273
+Knife-edge period (logical)     = FALSE
+Proportion of Year              = 0.5013699
+Start of period (propn of year) = 0.2465753
+End of period (propn of year)   = 0.7479452
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     KrillEnv                 1          3          0.501
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Check - Module in Universe is  = Biota
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     Krill                    2          1              1
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+Biota        Krill                    1     2    273     recruit        
+
+During
+
+Biota        Krill                    1     2    273     mortality      
+Biota        Krill                    1     2    273     migrate        
+
+After
+
+Biota        Krill                    1     2    273     printState     
+
+##################################################################
+Period 3
+##################################################################
+
+Period Number                   = 3
+Last julian day of period       = 274
+Knife-edge period (logical)     = FALSE
+Proportion of Year              = 0.002739726
+Start of period (propn of year) = 0.7479452
+End of period (propn of year)   = 0.7506849
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     KrillEnv                 1          4          0.003
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Check - Module in Universe is  = Biota
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     Krill                    1          1          0.005
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+Biota        Krill                    1     3    274     reproduce      
+
+During
+
+Biota        Krill                    1     3    274     mortality      
+Biota        Krill                    1     3    274     migrate        
+
+After
+
+Environment  KrillEnv                 1     3    274     update.environm
+
+##################################################################
+Period 4
+##################################################################
+
+Period Number                   = 4
+Last julian day of period       = 365
+Knife-edge period (logical)     = FALSE
+Proportion of Year              = 0.2493151
+Start of period (propn of year) = 0.7506849
+End of period (propn of year)   = 1
+
+------------------------------------------------------------------
+Check Timestep to Period conversion in each module
+------------------------------------------------------------------
+
+Module Environment
+
+     Check - Module in Universe is  = Environment
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     KrillEnv                 1          1          0.249
+
++++++++++++++++++++++++++++++++++++++
+Module Biota
+
+     Check - Module in Universe is  = Biota
+
+     Element              Timestep  PerInTstep  PropOfTstep
+
+     Krill                    1          2            0.5
+
++++++++++++++++++++++++++++++++++++++
+Module Activity
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Management
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Output
+
+     Module not present in this period
+
++++++++++++++++++++++++++++++++++++++
+Module Presentation
+
+     Module not present in this period
+
+------------------------------------------------------------------
+Action matrix for period
+------------------------------------------------------------------
+
+Module       ElementName          ElNum ElPer PerLastDay Action
+
+Before
+
+Environment  KrillEnv                 1     4    365     printState     
+
+During
+
+Biota        Krill                    1     4    365     mortality      
+Biota        Krill                    1     4    365     migrate        
+
+After
+
+NA           NA                      NA    NA     NA     NA             
+

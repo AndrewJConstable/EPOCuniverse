@@ -1,0 +1,17 @@
+---
+  title: "EPOC development"
+output: html_document
+---
+
+  
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library("EPOC")
+```
+
+```{r , include=FALSE}
+setwd("C:\\_w\\_p\\_mod\\01 fworks\\EPOC\\_scenarios\\__test\\")
+
+epoc()
+````
+
