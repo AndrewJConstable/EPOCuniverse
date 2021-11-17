@@ -1,17 +1,46 @@
 ---
-  title: "EPOC development"
+title: "EPOC development"
+author: "Andrew Constable"
+date: "14/11/2021"
 output: html_document
 ---
-
   
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library("EPOC")
 ```
 
-```{r , include=FALSE}
-setwd("C:\\_w\\_p\\_mod\\01 fworks\\EPOC\\_scenarios\\__test\\")
+# Scenario: Test
 
+## To do
+  
+1. Check to see whether NetCDF files can be appended without adding much overhead  
+1. Use NetCDF rather than flat files for  
+    i. environment data  
+    i. printing State of environment (thus have variable names with files)  
+  
+  
+## Description
+
+*Test* implements a new Universe based on a simple spatial domain (1 area), scenario (3 replicate time series), and a single environmental variable.  
+  
+The environmental variable has a stochastic component.  Rather than calling the random number generator at each time step, the variable is saved to file, allowing for statistical analysis as well as re-use under many circumstances. The following steps occur:  
+  
+1. During setup, if the file is not present then it is created according to the specifications  
+1. Runtime - reads one line of the file per time step to update the state of the environment, and prints the state at that time.  
+  
+This simple example illustrates how EPOC works, including the need for *code* and *data* files.  
+  
+Although names can be self-determined, three essential input data scripts are:  
+  
+* Universe - the file name is used in the function call epoc().  The default is 'Universe.data.R'  
+* Spatial configuration (polygons) - the filename is detailed in the Universe data script.  
+* Scenario details - the filename is detailed in the Universe data script.  
+
+## Runtime and Analysis
+
+```{r , include=FALSE, echo=FALSE}
+source("sTest_install_catalogue.R")
 epoc()
 ````
 
